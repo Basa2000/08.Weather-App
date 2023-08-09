@@ -24,7 +24,14 @@
     height: 100vh;
     color: var(--colorLight2);
     background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
+
+
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+
 }
+
 
 h1{
     text-align: center;
@@ -55,7 +62,7 @@ h1{
 }
 
 .weather-container{
-    margin-top: 4rem;
+    margin-block: 4rem;
 }
 
 .btn{
@@ -155,7 +162,7 @@ h1{
 
 .parameter-container{
     width: 40%;
-    /* height: 8.5em; */
+    height: 8.5em;
     display: flex;
     flex-direction: row;
     gap: 10px 20px;
@@ -255,19 +262,14 @@ h1{
 
 
 /* ResponsiveNess */
-@media screen and (max-width: 1000px) {
+@media (max-width: 950px) {
 
-    .wrapper{
-        height: 100%;
-    }
- 
     .parameter-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 10px;
-        margin-bottom: 50px;
+        margin-top: 160px;
         
     }
     .parameter{
@@ -279,22 +281,21 @@ h1{
     }
 }
 
-@media screen and (max-width: 500px) {
+@media  (max-width: 450px) {
 
-    .wrapper{
-        height: 100%;
+    .tab-container{
+        flex-direction: column;   
+        align-items: center;
+        gap: 5px;
+
     }
-
-
 
     .parameter-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 10px;
-        margin-bottom: 50px;
-
+        margin-top: 160px;
     }
     .user-info-container p[data-temp]{
         font-size: 2rem;
