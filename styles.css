@@ -55,7 +55,7 @@ h1{
 }
 
 .weather-container{
-    margin-block: 4rem;
+    margin-top: 4rem;
 }
 
 .btn{
@@ -155,7 +155,7 @@ h1{
 
 .parameter-container{
     width: 40%;
-    height: 8.5em;
+    /* height: 8.5em; */
     display: flex;
     flex-direction: row;
     gap: 10px 20px;
@@ -257,12 +257,17 @@ h1{
 /* ResponsiveNess */
 @media screen and (max-width: 1000px) {
 
+    .wrapper{
+        height: 100%;
+    }
+ 
     .parameter-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 160px;
+        margin-top: 10px;
+        margin-bottom: 50px;
         
     }
     .parameter{
@@ -276,12 +281,20 @@ h1{
 
 @media screen and (max-width: 500px) {
 
+    .wrapper{
+        height: 100%;
+    }
+
+
+
     .parameter-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 160px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+
     }
     .user-info-container p[data-temp]{
         font-size: 2rem;
